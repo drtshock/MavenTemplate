@@ -1,0 +1,13 @@
+name: ShockVote
+author: drtshock
+version: 1.0-SNAPSHOT
+main: net.drtshock.shockvote.ShockVote
+depend: [Votifier]
+commands:
+  svr:
+    permission: shockvote.reload
+  votes:
+    permission: shockvote.votes
+    default: true
+    usage: /<command>
+    

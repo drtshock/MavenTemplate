@@ -1,0 +1,17 @@
+# ObduroVote by drtshock
+# Use {player} in place of the name of the player that voted.
+# Use {totalvotes} to show how many times that player has voted this month total.
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  database: factionsnew
+  user: inspector
+  password: pineapple
+
+message: "&7Obduro &b>>> &7{name} &fjust voted for a total of &a{totalvotes} &7this month!"
+commands:
+  - addcredits {player} 10
+  - eco give {player} 500
+  - exp give {player} 150
+  - give {player} diamond 4
